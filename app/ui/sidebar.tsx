@@ -32,12 +32,12 @@ const Sidebar = () => {
           <Linkedin />
         </div>
         <div>
-          <p className="text-xl font-semibold">Welcome to AgriConnect Hub</p>
+          <p className="text-lg font-semibold">Welcome to AgriConnect Hub</p>
         </div>
       </main>
 
       <section
-        className={`${inter.className} p-5 px-40 flex justify-between items-center gap-40`}
+        className={`${inter.className} p-5 px-40 bg-white flex justify-between items-center gap-40`}
       >
         <div className="flex flex-nowrap gap-5">
           <Image src={"/Group.png"} width={30} height={20} alt="agriculture" />
