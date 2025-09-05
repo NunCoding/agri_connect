@@ -12,12 +12,9 @@ export default function Page() {
         <Sidebar />
         <div className="flex justify-between px-40 mt-20">
           <div className="w-lg bg-white p-10 rounded-lg shadow">
-            <h1 className="text-4xl font-medium">Get Started Now</h1>
+            <h1 className="text-4xl font-medium">Welcome back!</h1>
+            <p>Enter your Credentials to access your account</p>
             <form action="" className="flex flex-col gap-5 mt-10">
-              <div>
-                <label htmlFor="text">Name</label>
-                <Input type="text" placeholder="name" />
-              </div>
               <div>
                 <label htmlFor="text">Email</label>
                 <Input type="email" placeholder="email" />
@@ -56,7 +53,7 @@ export default function Page() {
             </div>
             <div className="mt-5 flex justify-center items-center gap-1 font-medium">
                 <p>Have an account? </p>
-                <Link href={'/auth/signin'} className="text-blue-700">Sign In</Link>
+                <Link href={'/auth/signup'} className="text-blue-700">Sign Up</Link>
             </div>
           </div>
           <div className="max-w-6xl">
