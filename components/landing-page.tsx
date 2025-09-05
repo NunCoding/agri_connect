@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import Link from "next/link";
 const Landing = () => {
   return (
     <div>
@@ -15,7 +16,9 @@ const Landing = () => {
         </p>
       <div className="flex gap-5">
         <Button className="bg-orange-400 border-none w-44 h-12" variant={'outline'}>
-          <span className="text-sm sm:text-lg font-bold">SELL HERE</span>
+          <span className="text-sm sm:text-lg font-bold">
+            <Link href={'/auth/signup'}>SELL HERE</Link>
+          </span>
         </Button>
         <Button className="bg-orange-400 border-none w-44 h-12" variant={'outline'}>
         <span className="text-sm sm:text-lg font-bold">BUY HERE</span>
