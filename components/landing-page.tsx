@@ -13,9 +13,13 @@ const Landing = () => {
           Empowering Rural Dreams, Nurturing Agricultural Growth - AgriConnect
           Hub cultivates prosperity from the roots up.
         </p>
-      <div className="flex gap-5 text-xl">
-        <Button className="bg-orange-400 border-none w-44 h-12" variant={'outline'}>Sell Here</Button>
-        <Button className="bg-orange-400 border-none w-44 h-12" variant={'outline'}>Buy Here</Button>
+      <div className="flex gap-5">
+        <Button className="bg-orange-400 border-none w-44 h-12" variant={'outline'}>
+          <span className="text-sm sm:text-lg font-bold">SELL HERE</span>
+        </Button>
+        <Button className="bg-orange-400 border-none w-44 h-12" variant={'outline'}>
+        <span className="text-sm sm:text-lg font-bold">BUY HERE</span>
+        </Button>
       </div>
       </div>
     </div>
