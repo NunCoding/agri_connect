@@ -32,7 +32,7 @@ export default function Page() {
               </div>
               <Input
                 type="submit"
-                value={"Signup"}
+                value={"Sign up"}
                 className="bg-green-700 text-white font-medium"
               />
             </form>

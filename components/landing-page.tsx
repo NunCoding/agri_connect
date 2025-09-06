@@ -20,8 +20,10 @@ const Landing = () => {
             <Link href={'/auth/signup'}>SELL HERE</Link>
           </span>
         </Button>
-        <Button className="bg-orange-400 border-none w-44 h-12" variant={'outline'}>
-        <span className="text-sm sm:text-lg font-bold">BUY HERE</span>
+        <Button className="bg-green-700 border-none w-44 h-12 cursor-pointer" variant={'outline'}>
+        <span className="text-sm sm:text-lg font-bold">
+          <Link href={'/auth/signup'}>BUY HERE</Link>
+        </span>
         </Button>
       </div>
       </div>
