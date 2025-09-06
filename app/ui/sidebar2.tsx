@@ -1,8 +1,5 @@
 "use client";
 import {
-  Facebook,
-  PhoneCall,
-  Linkedin,
   Search,
   MapPin,
   Handbag,
@@ -40,7 +37,7 @@ const Sidebar2 = () => {
       >
         <div className="flex gap-5">
           <div className="flex flex-nowrap gap-5">
-            <MapPin/>
+            <MapPin />
           </div>
           <div>
             <p className="text-lg font-semibold">Somewhere in Cambodia</p>
@@ -82,11 +79,11 @@ const Sidebar2 = () => {
             <p>(+885) 83723634</p>
           </div>
           <Search />
-          <Heart/>
+          <Heart />
           <div>
-          <Handbag />
+            <Handbag />
           </div>
-          <User/>
+          <User />
         </div>
       </section>
     </>
