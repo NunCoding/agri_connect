@@ -14,7 +14,7 @@ export default function Page() {
           <div className="w-lg bg-white p-10 rounded-lg shadow">
             <h1 className="text-4xl font-medium">Welcome back!</h1>
             <p>Enter your Credentials to access your account</p>
-            <form action="" className="flex flex-col gap-5 mt-10">
+            <form action="/home" className="flex flex-col gap-5 mt-10">
               <div>
                 <label htmlFor="text">Email</label>
                 <Input type="email" placeholder="email" />

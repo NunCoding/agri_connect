@@ -13,7 +13,7 @@ export default function Page() {
         <div className="flex justify-between px-40 mt-20">
           <div className="w-lg bg-white p-10 rounded-lg shadow">
             <h1 className="text-4xl font-medium">Get Started Now</h1>
-            <form action="" className="flex flex-col gap-5 mt-10">
+            <form action="/home" className="flex flex-col gap-5 mt-10">
               <div>
                 <label htmlFor="text">Name</label>
                 <Input type="text" placeholder="name" />
