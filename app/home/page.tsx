@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { ProductCard } from "@/components/product-card";
 import { CategoryCard } from "@/components/category-card";
+import { FooterPage } from "@/components/footer-page";
 import {
   Carousel,
   CarouselContent,
@@ -206,6 +207,9 @@ const page = () => {
             <CarouselNext />
           </Carousel>
         </div>
+      </section>
+      <section className="px-5 py-20 sm:px-40 bg-gray-900 text-white">
+        <FooterPage/>
       </section>
     </>
   );
