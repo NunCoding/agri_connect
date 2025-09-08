@@ -3,6 +3,14 @@ import Sidebar2 from "../ui/sidebar2";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { ProductCard } from "@/components/product-card";
+import { CategoryCard } from "@/components/category-card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const page = () => {
   const services = [
@@ -62,6 +70,45 @@ const page = () => {
       discount: 0,
     },
   ];
+
+  const categories = [
+    {
+      id: 1,
+      image: "/category/Vegetable.png",
+      title: "Vegetables",
+      total: 165,
+    },
+    {
+      id: 2,
+      image: "/category/fruits.png",
+      title: "Fresh Fruit",
+      total: 137,
+    },
+    {
+      id: 3,
+      image: "/category/fish.png",
+      title: "Fish",
+      total: 34,
+    },
+    {
+      id: 4,
+      image: "/category/meat.png",
+      title: "Meat",
+      total: 165,
+    },
+    {
+      id: 5,
+      image: "/category/meat.png",
+      title: "Water and Drinks",
+      total: 48,
+    },
+    {
+      id: 6,
+      image: "/category/snacks.png",
+      title: "Snacks",
+      total: 165,
+    },
+  ];
   return (
     <>
       <section
@@ -70,7 +117,7 @@ const page = () => {
       >
         <Sidebar2 />
 
-        <div className="flex justify-center items-center px-40">
+        <div className="flex justify-center items-center px-40 mt-30">
           <div className="w-2xl"></div>
           <div className="mt-40">
             <h1 className="text-2xl font-medium text-green-500 uppercase">
@@ -127,6 +174,37 @@ const page = () => {
               imageAlt={item.name}
             />
           ))}
+        </div>
+      </section>
+      <section id="categories" className="px-5 py-20 sm:px-40">
+        <div className="flex justify-between items-center">
+          <h1 className="text-4xl font-bold">Shop by Top Categories</h1>
+          <div className="flex justify-center items-center font-medium text-green-600 cursor-pointer">
+            <h1>View All</h1>
+            <ArrowRight />
+          </div>
+        </div>
+        <div className="w-full flex flex-wrap gap-5 justify-between items-center mt-10">
+          <Carousel className="w-full">
+            <CarouselContent>
+              {categories.map((item) => (
+                // IMPORTANT: flex-none & a concrete width so Embla can compute snaps
+                <CarouselItem
+                  key={item.id}
+                  className="flex-none w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-1"
+                >
+                  <CategoryCard
+                    image={item.image}
+                    title={item.title}
+                    total={item.total}
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
     </>

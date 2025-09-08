@@ -42,10 +42,10 @@ export function ProductCard({
 
   return (
     <Card className="w-full max-w-[480px] bg-card border-border overflow-hidden hover:shadow-lg hover:shadow-green-100 hover:border hover:border-green-600 transition-shadow duration-300">
-      <div className="relative">
+      <div className="relative z-0">
         {/* Sale Badge */}
         {salePercentage && (
-          <div className="absolute top-3 left-3 z-10">
+          <div className="absolute top-3 left-3">
             <div className="bg-secondary text-secondary-foreground px-3 py-1 rounded-md text-sm font-semibold">
               Sale {salePercentage}%
             </div>
@@ -59,7 +59,6 @@ export function ProductCard({
             alt={imageAlt}
             width={300}
             height={300}
-            className="object-contain"
           />
         </div>
       </div>

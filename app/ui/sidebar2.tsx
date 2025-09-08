@@ -31,7 +31,7 @@ const Sidebar2 = () => {
   }
 
   return (
-    <>
+    <div className="w-full fixed top-0 bottom-0 z-50">
       <main
         className={`${inter.className} p-2 bg-gray-50 px-40 text-gray-500 flex justify-between items-center gap-40`}
       >
@@ -86,7 +86,7 @@ const Sidebar2 = () => {
           <User />
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
