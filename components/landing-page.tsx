@@ -22,7 +22,7 @@ const Landing = () => {
         </Button>
         <Button className="bg-green-700 border-none w-44 h-12 cursor-pointer" variant={'outline'}>
         <span className="text-sm sm:text-lg font-bold">
-          <Link href={'/auth/signup'}>BUY HERE</Link>
+          <Link href={'/buyer'}>BUY HERE</Link>
         </span>
         </Button>
       </div>
