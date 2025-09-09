@@ -11,12 +11,12 @@ export default function Page() {
         <div className="max-w-8xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-screen max-h-[600px]">
             {/* Main Hero Section */}
-            <div className="lg:col-span-2 bg-gradient-to-br from-green-900 to-green-600 rounded-lg p-8 flex items-center justify-between text-white relative overflow-hidden">
-              <div className="flex-1 z-10">
-                <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-balance">
+            <div className="lg:col-span-2 bg-gradient-to-br from-green-900 to-green-600 rounded-lg px-20 flex items-center justify-between text-white relative overflow-hidden">
+              <div className="flex flex-col gap-5">
+                <h1 className="text-4xl xl:text-7xl font-bold mb-6 text-balance">
                   AgriConnect Hub
                 </h1>
-                <div className="mb-6">
+                <div className="mb-6 border-l-2 border-green-500 px-3">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-lg">Sale up to</span>
                     <span className="bg-orange-500 text-white px-3 py-1 rounded-lg font-bold text-lg">
@@ -29,7 +29,7 @@ export default function Page() {
                 </div>
                 <Button
                   size="lg"
-                  className="bg-white text-green-600 hover:bg-gray-100 rounded-full px-8 py-3 font-semibold text-lg"
+                  className="bg-white text-green-600 max-w-52 py-7 hover:bg-gray-100 rounded-full px-8 font-semibold text-lg"
                 >
                   Shop now
                   <ArrowRight className="ml-2 h-5 w-5" />
