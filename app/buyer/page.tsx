@@ -1,17 +1,19 @@
+"use client";
 import Sidebar2 from "../ui/sidebar2";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { TrustBadges } from "@/components/trust-badges";
 export default function Page() {
   return (
     <>
       <Sidebar2 />
       <section className="mt-20 px-40 py-20">
         <div className="max-w-8xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-screen max-h-[600px]">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 h-screen max-h-[800px]">
             {/* Main Hero Section */}
-            <div className="lg:col-span-2 bg-gradient-to-br from-green-900 to-green-600 rounded-lg px-20 flex items-center justify-between text-white relative overflow-hidden">
+            <div className="lg:col-span-2 bg-gradient-to-br from-green-900 to-green-400 rounded-lg px-20 flex items-center justify-between text-white relative overflow-hidden">
               <div className="flex flex-col gap-5">
                 <h1 className="text-4xl xl:text-7xl font-bold mb-6 text-balance">
                   AgriConnect Hub
@@ -68,13 +70,13 @@ export default function Page() {
                     75% OFF
                   </h2>
                   <p className="text-gray-600 mb-4">Only Fruit & Vegetable</p>
-                  <Button
-                    variant="ghost"
-                    className="text-green-600 hover:text-green-700 p-0 font-semibold"
+                  <button
+                    className="text-green-400 hover:text-green-300 p-0 font-semibold"
+                    onClick={() => console.log("world")}
                   >
                     Shop Now
                     <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  </button>
                 </div>
               </Card>
 
@@ -103,14 +105,21 @@ export default function Page() {
                   <Button
                     variant="ghost"
                     className="text-green-400 hover:text-green-300 p-0 font-semibold"
+                    onClick={() => console.log("world")}
                   >
                     Shop Now
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
+                  
                 </div>
               </Card>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="category-buyer">
+        <div className="">
+          <TrustBadges />
         </div>
       </section>
     </>
