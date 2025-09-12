@@ -66,15 +66,15 @@ export default function Page() {
                 {/* Overlay content */}
                 <div className="relative z-10">
                   <p className="text-gray-600 font-medium mb-2">SUMMER SALE</p>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-2">
+                  <h2 className="text-sm sm:text-6xl font-bold text-gray-900 mb-2">
                     75% OFF
                   </h2>
                   <p className="text-gray-600 mb-4">Only Fruit & Vegetable</p>
                   <button
-                    className="text-green-400 hover:text-green-300 p-0 font-semibold"
+                    className="text-green-600 text-lg hover:bg-transparent p-0 font-semibold flex flex-nowrap justify-center items-center"
                     onClick={() => console.log("world")}
                   >
-                    Shop Now
+                    <span>Shop Now</span>
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </button>
                 </div>
@@ -95,29 +95,27 @@ export default function Page() {
                 <div className="absolute inset-0 bg-gradient-to-br from-black/20 via-black/10 to-transparent" />
 
                 {/* Content */}
-                <div className="relative z-10">
-                  <p className="text-green-300 font-medium mb-2">BEST DEAL</p>
-                  <h2 className="text-3xl font-bold mb-1">Special Products</h2>
-                  <h3 className="text-2xl font-semibold mb-4">
+                <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
+                  <p className="font-medium mb-2">BEST DEAL</p>
+                  <h2 className="text-sm sm:text-5xl font-bold mb-1">Special Products</h2>
+                  <h3 className="text-sm sm:text-5xl font-semibold mb-4">
                     Deal of the Month
                   </h3>
 
                   <Button
-                    variant="ghost"
-                    className="text-green-400 hover:text-green-300 p-0 font-semibold"
+                    className="text-green-400 hover:text-green-300 text-lg p-0 font-semibold bg-transparent hover:bg-transparent"
                     onClick={() => console.log("world")}
                   >
                     Shop Now
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
-                  
                 </div>
               </Card>
             </div>
           </div>
         </div>
       </section>
-      <section id="category-buyer">
+      <section id="category-buyer" className="px-40 bg-white">
         <div className="">
           <TrustBadges />
         </div>
