@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { TrustBadges } from "@/components/trust-badges";
 import { PopularCategory } from "@/components/popular-category";
+import { FooterPage } from "@/components/footer-page";
 export default function Page() {
   return (
     <>
@@ -124,6 +125,9 @@ export default function Page() {
           {/* Popular Categories Section */}
           <PopularCategory/>
         </div>
+      </section>
+      <section className="px-40 bg-gray-900 py-20 text-white">
+        <FooterPage />
       </section>
     </>
   );
