@@ -8,6 +8,7 @@ import { TrustBadges } from "@/components/trust-badges";
 import { PopularCategory } from "@/components/popular-category";
 import { FooterPage } from "@/components/footer-page";
 import { PopularProduct } from "@/components/popular-product";
+import { PromoBanner } from "@/components/promo-banner";
 export default function Page() {
   return (
     <>
@@ -131,6 +132,9 @@ export default function Page() {
       </section>
       <section id="product-buyer" className="px-40 bg-white pb-20">
         <PopularProduct />
+      </section>
+      <section className="px-40 bg-white pb-20">
+        <PromoBanner/>
       </section>
       <section className="px-40 bg-gray-900 py-20 text-white">
         <FooterPage />
