@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { TrustBadges } from "@/components/trust-badges";
+import { PopularCategory } from "@/components/popular-category";
 export default function Page() {
   return (
     <>
@@ -118,6 +119,10 @@ export default function Page() {
       <section id="category-buyer" className="px-40 bg-white">
         <div className="">
           <TrustBadges />
+        </div>
+        <div className="max-w-8xl mx-auto py-20">
+          {/* Popular Categories Section */}
+          <PopularCategory/>
         </div>
       </section>
     </>
