@@ -20,7 +20,7 @@ const Sidebar2 = () => {
 
   const listLink = [
     { id: 1, href: "/home", name: "home" },
-    { id: 2, href: "#", name: "shop" },
+    { id: 2, href: "buyer", name: "shop" },
     { id: 3, href: "#", name: "pages" },
     { id: 4, href: "#", name: "blog" },
     { id: 5, href: "#", name: "about" },

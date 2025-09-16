@@ -7,6 +7,7 @@ import Image from "next/image";
 import { TrustBadges } from "@/components/trust-badges";
 import { PopularCategory } from "@/components/popular-category";
 import { FooterPage } from "@/components/footer-page";
+import { PopularProduct } from "@/components/popular-product";
 export default function Page() {
   return (
     <>
@@ -99,7 +100,9 @@ export default function Page() {
                 {/* Content */}
                 <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
                   <p className="font-medium mb-2">BEST DEAL</p>
-                  <h2 className="text-sm sm:text-5xl font-bold mb-1">Special Products</h2>
+                  <h2 className="text-sm sm:text-5xl font-bold mb-1">
+                    Special Products
+                  </h2>
                   <h3 className="text-sm sm:text-5xl font-semibold mb-4">
                     Deal of the Month
                   </h3>
@@ -123,8 +126,11 @@ export default function Page() {
         </div>
         <div className="max-w-8xl mx-auto py-20">
           {/* Popular Categories Section */}
-          <PopularCategory/>
+          <PopularCategory />
         </div>
+      </section>
+      <section id="product-buyer" className="px-40 bg-white pb-20">
+        <PopularProduct />
       </section>
       <section className="px-40 bg-gray-900 py-20 text-white">
         <FooterPage />
